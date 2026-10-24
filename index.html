@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#111112">
+    <title>Srinidhi Embroidery — Design catalogue</title>
+    <meta name="description" content="Browse the Srinidhi Embroidery design catalogue. Note the exact design number when asking about a pattern.">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Srinidhi Embroidery — Design catalogue">
+    <meta property="og:description" content="A considered collection of embroidery designs. Browse by the exact design number.">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#collection">Skip to designs</a>
+    <header class="masthead">
+      <a class="wordmark" href="./" aria-label="Srinidhi Embroidery, catalogue home">
+        <span class="wordmark-copy"><strong>Srinidhi</strong><small>EMBROIDERY · TELANGANA</small></span>
+      </a>
+      <p class="masthead-note">A catalogue of careful details <span>—</span> browse by number</p>
+    </header>
+
+    <main>
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> SRINIDHI EMBROIDERY <span class="eyebrow-index">DESIGN ARCHIVE</span></p>
+          <h1 id="intro-title">Designs,<br><em>by number.</em></h1>
+          <p class="intro-description">Browse the archive. Reference the exact design number.</p>
+          <a class="text-link" href="#collection">Browse designs <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="collection" id="collection" aria-labelledby="collection-title">
+        <div class="collection-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-line"></span> THE COLLECTION</p>
+            <h2 id="collection-title">Browse designs.</h2>
+          </div>
+          <p class="collection-note">Search by exact design number.</p>
+        </div>
+        <div class="demo-notice" role="note">
+          <span class="demo-stamp">DEMO</span>
+          <p><strong>DEMO INVENTORY — NOT FOR SALE.</strong> All artwork shown is illustrative demonstration artwork, not the owner’s real designs.</p>
+        </div>
+        <div class="catalog-tools">
+          <label class="search-wrap" for="design-search">
+            <svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="5.5"/><path d="m13 13 4 4"/></svg>
+            <input id="design-search" type="search" inputmode="search" autocomplete="off" placeholder="Find a design number" aria-describedby="search-help">
+          </label>
+          <span id="search-help" class="search-hint">Search by exact number</span>
+          <p class="results-count" id="results-count" aria-live="polite"></p>
+        </div>
+        <div id="catalog-status" class="catalog-status" role="status" aria-live="polite">
+          <span class="status-mark" aria-hidden="true"></span>
+          <span>Gathering the design book…</span>
+        </div>
+        <div id="design-grid" class="design-grid" aria-label="Embroidery design catalogue"></div>
+        <div id="empty-state" class="empty-state" hidden>
+          <span class="empty-flower" aria-hidden="true"></span>
+          <h3>No design by that number.</h3>
+          <p>Try another number, or clear your search to browse the collection.</p>
+          <button type="button" class="quiet-button" id="clear-search">Clear search</button>
+        </div>
+        <div id="catalog-error" class="catalog-error" hidden role="alert">
+          <span class="error-kicker">THE CATALOGUE COULD NOT BE OPENED</span>
+          <p id="catalog-error-message">Please try again in a moment.</p>
+          <button type="button" class="quiet-button" id="retry-catalog">Try again</button>
+        </div>
+        <p id="unknown-design" class="unknown-design" role="status" hidden></p>
+      </section>
+      <section class="closing-note" aria-label="How to refer to a design">
+        <span class="closing-seal" aria-hidden="true">S</span>
+        <p>Found a design?<br><span>Note its exact number.</span></p>
+        <span class="closing-detail">A NOTE FROM SRINIDHI</span>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="./">Srinidhi <span>Embroidery</span></a>
+      <p>Designs to keep close. <span>·</span> Telangana, India</p>
+      <span class="footer-end">THE DESIGN BOOK <span>© <span id="year"></span></span></span>
+    </footer>
+
+    <div id="design-dialog" class="design-dialog" aria-hidden="true">
+      <div class="dialog-backdrop" data-close-dialog></div>
+      <section class="dialog-panel" role="dialog" aria-modal="true" aria-labelledby="dialog-design-number" tabindex="-1">
+        <button class="dialog-close icon-button" type="button" aria-label="Close enlarged design" data-close-dialog>
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></svg>
+        </button>
+        <button class="dialog-nav dialog-previous icon-button" type="button" aria-label="Previous design">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <figure class="dialog-figure">
+          <div class="dialog-image-frame" id="dialog-image-frame"></div>
+          <figcaption class="dialog-caption">
+            <span class="caption-kicker">DESIGN NUMBER</span>
+            <strong id="dialog-design-number"></strong>
+            <span class="dialog-position" id="dialog-position"></span>
+          </figcaption>
+        </figure>
+        <button class="dialog-nav dialog-next icon-button" type="button" aria-label="Next design">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </section>
+    </div>
+  </body>
+</html>

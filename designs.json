@@ -1,0 +1,28 @@
+{
+  "designs": [
+    {
+      "number": "001",
+      "image": "assets/demo-petal.svg",
+      "alt": "Demonstration embroidery illustration, design number 001: an ivory and rose flower with a slender olive stem.",
+      "demo": true
+    },
+    {
+      "number": "014",
+      "image": "assets/demo-vine.svg",
+      "alt": "Demonstration embroidery illustration, design number 014: a looping olive vine with small dusty rose buds.",
+      "demo": true
+    },
+    {
+      "number": "027",
+      "image": "assets/demo-bloom.svg",
+      "alt": "Demonstration embroidery illustration, design number 027: a symmetrical ochre and muted pink floral medallion.",
+      "demo": true
+    },
+    {
+      "number": "103",
+      "image": "assets/demo-arch.svg",
+      "alt": "Demonstration embroidery illustration, design number 103: an arched botanical motif with two stitched leaves and a flower.",
+      "demo": true
+    }
+  ]
+}
